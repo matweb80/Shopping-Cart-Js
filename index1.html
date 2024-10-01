@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>اضافه کردن دوره به سبد خرید</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/8566b9038a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body dir="rtl">
+    <div class="container">
+      <header class="header">
+        <a class="icon-header" href="#"
+          ><i class="fa-solid fa-door-open"></i
+        ></a>
+        <div class="menu">
+          <a href="#"><i class="fa-solid fa-house"></i>صفحه اصلی</a>
+          <a href="#"><i class="fa-solid fa-shop"></i>فروشگاه</a>
+          <a href="#"><i class="fa-solid fa-inbox"></i>پروژه ها</a>
+          <a href="#"><i class="fa-solid fa-circle-info"></i>درباره ما</a>
+          <a href="#"><i class="fa-solid fa-phone"></i>تماس با ما</a>
+        </div>
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input class="searchbox-input" type="text" placeholder="جستجو..." />
+        </div>
+        <div class="shop">
+          <div id="shoping-cart">
+            <div class="shoping-cart-head">سبد خرید</div>
+            <div class="shoping-cart-content">
+              <table id="cart-content">
+                <thead>
+                  <tr>
+                    <th>تصویر</th>
+                    <th>اسم دوره</th>
+                    <th>قیمت</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+                <tfoot>
+                  <tr>
+                    <td>جمع کل</td>
+                    <td></td>
+                    <td id="total-price"></td>
+                    <td>تومان</td>
+                    <td class="reload-button"><button type="button" onclick="window.location.reload()">محاسبه</button></td>
+                  </tr>
+                </tfoot>
+              </table>
+              <button id="clear-cart">پاک کردن همه</button>
+            </div>
+          </div>
+          <i aria-hidden="true" class="fas fa-shopping-cart"></i>
+        </div>
+      </header>
+      <section class="content">
+        <nav class="breadcrumbs">
+          <div class="breadcrumbs-items">
+            <a class="breadcrumbs-item" href="#">
+              <span>صفحه اصلی</span>
+              <i class="fa-solid fa-angle-left"></i>
+            </a>
+            <a class="breadcrumbs-item" href="#">
+              <span>فروشگاه</span>
+              <i class="fa-solid fa-angle-left"></i>
+            </a>
+          </div>
+        </nav>
+        <div class="bg-cover">
+          <div class="cover-color"></div>
+          <h2>فروشگاه</h2>
+        </div>
+      </section>
+      <main class="main">
+        <div class="main-nav">
+          <div class="right">
+            <span class="sort-by">
+              <i class="fas fa-sort-amount-down"></i>
+              مرتب سازی براساس:
+            </span>
+            <a href="#" class="sort-by-item active">پیش فرض</a>
+            <a href="#" class="sort-by-item">محبوبیت</a>
+            <a href="#" class="sort-by-item">میانگین رتبه</a>
+            <a href="#" class="sort-by-item">جدیدترین</a>
+            <a href="#" class="sort-by-item">هزینه: کم به زیاد</a>
+            <a href="#" class="sort-by-item">هزینه: زیاد به کم</a>
+          </div>
+          <div class="left">
+            <p>مشاهده همه</p>
+          </div>
+        </div>
+        <div id="posts">
+          <div class="post">
+            <a href="#"
+              ><img class="post-image" src="img/1.jpg" alt="profil"
+            /></a>
+            <h4 class="post-title"><a href="#">پروفیل آداپتور لنگه کشویی</a></h4>
+            <div class="post-price"><span>۵۰,۰۰۰ تومان</span></div>
+            <a href="#" class="post-buy-button" data-id="1">افزودن به سبد خرید</a>
+          </div>
+          <div class="post">
+            <a href="#"
+              ><img class="post-image" src="img/2.png" alt="profil"
+            /></a>
+            <h4 class="post-title"><a href="#">پروفیل لنگه پنجره</a></h4>
+            <div class="post-price"><span>۶۵,۰۰۰ تومان</span></div>
+            <a href="#" class="post-buy-button" data-id="2">افزودن به سبد خرید</a>
+          </div>
+          <div class="post">
+            <a href="#"
+              ><img class="post-image" src="img/3.png" alt="profil"
+            /></a>
+            <h4 class="post-title"><a href="#">پروفیل لنگه داخل بازشوی درب</a></h4>
+            <div class="post-price"><span>۱۱۵,۰۰۰ تومان</span></div>
+            <a href="#" class="post-buy-button" data-id="3">افزودن به سبد خرید</a>
+          </div>
+          <div class="post">
+            <a href="#"
+              ><img class="post-image" src="img/4.jpg" alt="profil"
+            /></a>
+            <h4 class="post-title"><a href="#">پروفیل لوله 70 میلیمتر</a></h4>
+            <div class="post-price"><span>۴۴,۵۰۰ تومان</span></div>
+            <a href="#" class="post-buy-button" data-id="4">افزودن به سبد خرید</a>
+          </div>
+          <div class="post">
+            <a href="#"
+              ><img class="post-image" src="img/5.jpg" alt="profil"
+            /></a>
+            <h4 class="post-title"><a href="#">پنجره دو جداره</a></h4>
+            <div class="post-price"><span>۲۱۵,۰۰۰ تومان</span></div>
+            <a href="#" class="post-buy-button" data-id="5">افزودن به سبد خرید</a>
+          </div>
+          <div class="post">
+            <a href="#"
+              ><img class="post-image" src="img/6.jpg" alt="profil"
+            /></a>
+            <h4 class="post-title"><a href="#">شیشه دوجداره</a></h4>
+            <div class="post-price"><span>۸۰,۰۰۰ تومان</span></div>
+            <a href="#" class="post-buy-button" data-id="6">افزودن به سبد خرید</a>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="brands">
+          <img src="img/brand1.png" alt="" class="brand" />
+          <img src="img/brand2.png" alt="" class="brand" />
+          <img src="img/brand3.png" alt="" class="brand" />
+          <img src="img/brand4.png" alt="" class="brand" />
+        </div>
+        <div class="footer-info">
+          <div class="right">
+            <a class="icon-footer" href="#">
+              <i class="fa-solid fa-door-open"></i>
+            </a>
+            <div class="footer-info-items">
+              <a href="#" class="footer-info-item">صفحه اصلی</a>
+              <hr />
+              <a href="#" class="footer-info-item">فروشگاه</a>
+              <hr />
+              <a href="#" class="footer-info-item">پروژه ها</a>
+              <hr />
+              <a href="#" class="footer-info-item">درباره ما</a>
+              <hr />
+              <a href="#" class="footer-info-item">تماس با ما</a>
+            </div>
+          </div>
+          <div class="left">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/UI.js"></script>
+    <script src="./js/Post.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
